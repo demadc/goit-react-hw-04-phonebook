@@ -22,7 +22,9 @@ export function App() {
   }, [contacts]);
 
   const handleAddContact = newContact => {
-    const isExist = contacts.find(contact => contact.name === newContact.name);
+    const isExist = contacts.find(
+      contact => contact.name.toLowerCase() === newContact.name.toLowerCase()
+    );
     if (isExist) {
       alert(`${newContact.name} is already in contacts.`);
       return;
