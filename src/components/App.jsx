@@ -20,7 +20,7 @@ export function App() {
       return;
     }
 
-    setContacts(prevContacts => [...prevContacts.contacts, newContact]);
+    setContacts(prevContacts => [...prevContacts, newContact]);
   };
 
   const handleFilter = e => {

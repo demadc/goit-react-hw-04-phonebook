@@ -3,8 +3,8 @@ import { nanoid } from 'nanoid/non-secure';
 import PropTypes from 'prop-types';
 import { Label, Button } from './Form.styled';
 
-const idName = nanoid;
-const idNum = nanoid;
+const idName = nanoid();
+const idNum = nanoid();
 
 export const ContactForm = ({ onAddContact }) => {
   return (
